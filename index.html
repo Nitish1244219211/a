@@ -5,54 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seep - Card Game</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Brush+Script+MT&family=Uncial+Antiqua&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Fullscreen Button -->
+    <div id="fullscreen-btn" class="fullscreen-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <!-- Mobile Rotation Screen -->
-    <div id="rotateScreen" class="rotate-screen">
-        <div class="rotate-content">
-            <div class="phone-animation">
-                <div class="phone-container">
-                    <div class="phone">
-                        <div class="phone-screen"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="rotate-bar"></div>
-            <div class="rotate-text">PLEASE ROTATE YOUR PHONE</div>
+    <div id="rotation-screen" class="rotation-screen">
+        <div class="rotation-container">
+            <div class="rotation-bar"></div>
+            <div class="rotation-text">PLEASE ROTATE YOUR PHONE</div>
+            <div class="mobile-device"></div>
         </div>
     </div>
 
-    <!-- Credit Screen -->
-    <div id="creditScreen" class="credit-screen">
-        <h1 class="company-name">KuramaGames</h1>
+    <!-- Company Intro Screen -->
+    <div id="company-screen" class="company-screen">
+        <div class="company-content">
+            <h1 class="company-name">KuramaGames</h1>
+            <p class="company-credit">Developed with passion for gaming</p>
+        </div>
     </div>
 
     <!-- Loading Screen -->
-    <div id="loadingScreen" class="loading-screen">
-        <div class="spotlight"></div>
-        <div class="card-logo">
-            <div class="ace-card">
-                <div class="card-content">
-                    <div class="suit spade">♠</div>
-                    <div class="rank">A</div>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-container">
+                <div class="ace-card">
+                    <div class="card-suit">♠</div>
+                    <div class="card-rank">A</div>
                 </div>
+                <h1 class="game-logo">Seep</h1>
+            </div>
+            <div class="spotlight"></div>
+            <div class="loader-container">
+                <div class="spinner"></div>
+                <p class="loading-text">Loading...</p>
             </div>
         </div>
-        <div class="game-title">SEEP</div>
-        <div class="loading-spinner">
-            <div class="spinner"></div>
-            <div class="loading-text">Loading...</div>
-        </div>
         <div class="tips-footer">
-            <div class="tip-text" id="tipText">Don't spoil other players' game by exiting mid-game.</div>
+            <div class="tip-container">
+                <p class="tip-text"></p>
+            </div>
         </div>
     </div>
 
-    <!-- Landing Page -->
-    <div id="landingPage" class="landing-page">
-        <div class="landing-content">
-            <h1 class="coming-soon">COMING SOON</h1>
+    <!-- Main Landing Page -->
+    <div id="main-screen" class="main-screen">
+        <div class="main-content">
+            <h1 class="coming-soon">Coming Soon</h1>
         </div>
     </div>
 
